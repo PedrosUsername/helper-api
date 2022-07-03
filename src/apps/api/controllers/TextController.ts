@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { LoremIpsumService } from "../../../services/LorenIpsumService";
+import { LoremIpsumService } from "../../../services/LoremIpsumService";
 
 
 interface TextRequest {
@@ -13,7 +13,7 @@ export class TextController {
     this.#loremIpsumService = new LoremIpsumService();
   }
 
-  getLorenIpsum = (req: Request<TextRequest>, res: Response, next: NextFunction) => {
+  getLoremIpsum = (req: Request<TextRequest>, res: Response, next: NextFunction) => {
     const qtd = Number(req.query.size ?? 5);
 
     return res.status(200).json({
