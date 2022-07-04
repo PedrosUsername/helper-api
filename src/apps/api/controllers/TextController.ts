@@ -14,7 +14,7 @@ export class TextController {
   }
 
   getLoremIpsum = (req: Request<TextRequest>, res: Response, next: NextFunction) => {
-    const qtd = Number(req.query.size ?? 5);
+    const qtd = Number(req.query.size ?? 69);
 
     return res.status(200).json({
       data: this.#loremIpsumService.generate(qtd),
