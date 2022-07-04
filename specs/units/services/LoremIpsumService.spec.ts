@@ -7,6 +7,9 @@ describe('Executando teste na classe LoremIpsumService', () => {
     _service = new LoremIpsumService()
   })
 
+
+
+  
   it ('Deveria retonar uma string com 5 palavras', () => {
     // Arrange
     const quantidade = 5
@@ -19,6 +22,9 @@ describe('Executando teste na classe LoremIpsumService', () => {
     expect(result).toBe(quantidade)
   })
 
+
+
+
   it ('Deveria retonar uma string com 69 palavras', () => {
     // Arrange
     const quantidade = 69
@@ -30,6 +36,9 @@ describe('Executando teste na classe LoremIpsumService', () => {
     // Assert
     expect(result).toBe(quantidade)
   })
+
+
+
 
   it ('Deveria retonar uma string com 75 palavras', () => {
     // Arrange
